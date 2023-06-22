@@ -44,7 +44,7 @@ typedef struct globals
 	int lifo;
 	unsigned int cont;
 	char  *arg;
-	stack_t *head;
+	stack_t *a_head;
 	FILE *fd;
 	char *buffer;
 } global_t;
