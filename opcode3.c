@@ -3,13 +3,13 @@
 /**
  * _rotl - rotates 1st element to the bottom and 2nd to the top
  * @dbly: linked list head
- * @lnum: line nummber
+ * @l_num: line nummber
  */
-void _rotl(stack_t **dbly, unsigned int lnum)
+void _rotl(stack_t **dbly, unsigned int l_num)
 {
 	stack_t *auxa = NULL;
 	stack_t *auxb = NULL;
-	(void)lnum;
+	(void)l_num;
 
 	if (*dbly == NULL)
 		return;
@@ -33,12 +33,12 @@ void _rotl(stack_t **dbly, unsigned int lnum)
 /**
  * _rotr - reverse stack
  * @dbly: linked list head
- * @lnum: line number
+ * @l_num: line number
  */
-void _rotr(stack_t **dbly, unsigned int lnum)
+void _rotr(stack_t **dbly, unsigned int l_num)
 {
 	stack_t *ux = NULL;
-	(void)lnum;
+	(void)l_num;
 
 	if (*dbly == NULL)
 		return;
