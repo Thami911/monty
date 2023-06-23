@@ -9,23 +9,23 @@
  */
 void _add(stack_t **dbly, unsigned int l_num)
 {
-	int k = 0;
-	stack_t *ux = NULL;
+	int x = 0;
+	stack_t *nx = NULL;
 
-	ux = *dbly;
+	nx = *dbly;
 
-	for (; ux != NULL; ux = ux->next, k++)
+	for (; nx != NULL; nx = nx->next, x++)
 		;
 
-	if (k < 2)
+	if (x < 2)
 	{
 		dprintf(2, "L%u: can't add, stack too short\n", l_num);
 		free_vglo();
 		exit(EXIT_FAILURE);
 	}
 
-	ux = (*dbly)->next;
-	ux->n += (*dbly)->n;
+	nx = (*dbly)->next;
+	nx->n += (*dbly)->n;
 	_pop(dbly, l_num);
 }
 
@@ -49,15 +49,15 @@ void _nop(stack_t **dbly, unsigned int l_num)
 
 void _sub(stack_t **hdn, unsigned int l_num)
 {
-	int k = 0;
+	int x = 0;
 	stack_t *crrnt;
 
 	crrnt = *hdn;
 
-	for (; crrnt != NULL; crrnt = crrnt->next, k++)
+	for (; crrnt != NULL; crrnt = crrnt->next, x++)
 		;
 
-	if (k < 2)
+	if (x < 2)
 	{
 		dprintf(2, "L%u: can't sub, stack too short\n", l_num);
 		free_vglo();
@@ -78,15 +78,15 @@ void _sub(stack_t **hdn, unsigned int l_num)
 
 void _div(stack_t **dbly, unsigned int l_num)
 {
-	int k = 0;
-	stack_t *ux = NULL;
+	int x = 0;
+	stack_t *nx = NULL;
 
-	ux = *dbly;
+	nx = *dbly;
 
-	for (; ux != NULL; ux = ux->next, k++)
+	for (; nx != NULL; nx = nx->next, x++)
 		;
 
-	if (k < 2)
+	if (x < 2)
 	{
 		dprintf(2, "L%u: can't div, stack too short\n", l_num);
 		free_vglo();
@@ -100,8 +100,8 @@ void _div(stack_t **dbly, unsigned int l_num)
 		exit(EXIT_FAILURE);
 	}
 
-	ux = (*dbly)->next;
-	ux->n /= (*dbly)->n;
+	nx = (*dbly)->next;
+	nx->n /= (*dbly)->n;
 	_pop(dbly, l_num);
 }
 
@@ -115,15 +115,15 @@ void _div(stack_t **dbly, unsigned int l_num)
 
 void _mul(stack_t **hdn, unsigned int l_num)
 {
-	int k = 0;
+	int x = 0;
 	stack_t *crrnt;
 
 	crrnt = *hdn;
 
-	for (; crrnt != NULL; crrnt = crrnt->next, k++)
+	for (; crrnt != NULL; crrnt = crrnt->next, x++)
 		;
 
-	if (k < 2)
+	if (x < 2)
 	{
 		dprintf(2, "L%u: can't mul, stack too short\n", l_num);
 		free_vglo();
