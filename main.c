@@ -9,7 +9,7 @@ global_t vglo;
  */
 void free_vglo(void)
 {
-	free_dlistint(vglo.head);
+	free_dlistint(vglo.a_head);
 	free(vglo.buffer);
 	fclose(vglo.fd);
 }
@@ -25,7 +25,7 @@ void start_vglo(FILE *file_d)
 	vglo.lifo = 1;
 	vglo.cont = 1;
 	vglo.arg = NULL;
-	vglo.head = NULL;
+	vglo.a_head = NULL;
 	vglo.fd = file_d;
 	vglo.buffer = NULL;
 }
@@ -90,7 +90,7 @@ int main(int ac, char *av[])
 				exit(EXIT_FAILURE);
 			}
 			vglo.arg = _strtoky(NULL, " \t\n");
-			f(&vglo.head, vglo.cont);
+			f(&vglo.a_head, vglo.cont);
 		}
 		n_lines = getline(&vglo.buffer, &size, file_d);
 		vglo.cont++;
