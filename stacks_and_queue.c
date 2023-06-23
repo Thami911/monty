@@ -3,12 +3,12 @@
 /**
  * _queue - sets format of data to queue(FIFI/LILO)
  * @dbly: head of linked list
- * @lnum: line number
+ * @l_num: line number
  */
-void _queue(stack_t **dbly, unsigned int lnum)
+void _queue(stack_t **dbly, unsigned int l_num)
 {
 	(void)dbly;
-	(void)lnum;
+	(void)l_num;
 
 	vglo.lifo = 0;
 }
@@ -16,12 +16,12 @@ void _queue(stack_t **dbly, unsigned int lnum)
 /**
  * _stack - sets format of data to stack (LIFO/FILO)
  * @dbly: linked list head
- * @lnum: line number
+ * @l_num: line number
  */
-void _stack(stack_t **dbly, unsigned int lnum)
+void _stack(stack_t **dbly, unsigned int l_num)
 {
 	(void)dbly;
-	(void)lnum;
+	(void)l_num;
 
 	vglo.lifo = 1;
 }
