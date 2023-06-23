@@ -8,7 +8,7 @@
  */
 void _push(stack_t **dbly, unsigned int l_num)
 {
-	int w, j;
+	int y, z;
 
 	if (!vglo.arg)
 	{
@@ -18,9 +18,9 @@ void _push(stack_t **dbly, unsigned int l_num)
 		exit(EXIT_FAILURE);
 	}
 
-	for (j = 0; vglo.arg[j] != '\0'; j++)
+	for (z = 0; vglo.arg[z] != '\0'; z++)
 	{
-		if (!isdigit(vglo.arg[j]) && vglo.arg[j] != '-')
+		if (!isdigit(vglo.arg[z]) && vglo.arg[z] != '-')
 		{
 			dprintf(2, "L%u: ", l_num);
 			dprintf(2, "usage: push integer\n");
@@ -29,12 +29,12 @@ void _push(stack_t **dbly, unsigned int l_num)
 		}
 	}
 
-	w = atoi(vglo.arg);
+	y = atoi(vglo.arg);
 
 	if (vglo.lifo == 1)
-		add_dnodeint(dbly, w);
+		add_dnodeint(dbly, y);
 	else
-		add_dnodeint_end(dbly, w);
+		add_dnodeint_end(dbly, y);
 }
 
 /**
@@ -113,15 +113,15 @@ void _pop(stack_t **dbly, unsigned int l_num)
  */
 void _swap(stack_t **dbly, unsigned int l_num)
 {
-	int b = 0;
+	int c = 0;
 	stack_t *ux = NULL;
 
 	ux = *dbly;
 
-	for (; ux != NULL; ux = ux->next, b++)
+	for (; ux != NULL; ux = ux->next, c++)
 		;
 
-	if (b < 2)
+	if (c < 2)
 	{
 		dprintf(2, "L%u: can't swap, stack too short\n", l_num);
 		free_vglo();
