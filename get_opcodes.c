@@ -29,13 +29,13 @@ void (*get_opcodes(char *a_opcode))(stack_t **stack, unsigned int l_nums)
 		{"queue", _queue},
 		{NULL, NULL}
 	};
-	int k;
+	int p;
 
-	for (k = 0; instruct[k].opcode; k++)
+	for (p = 0; instruct[p].opcode; p++)
 	{
-		if (_strcmp(instruct[k].opcode, a_opcode) == 0)
+		if (_strcmp(instruct[p].opcode, a_opcode) == 0)
 			break;
 	}
 
-	return (instruct[k].f);
+	return (instruct[p].f);
 }
