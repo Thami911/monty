@@ -32,7 +32,7 @@ void _push(stack_t **dbly, unsigned int l_num)
 	y = atoi(vglo.arg);
 
 	if (vglo.lifo == 1)
-		add_dnodeint_end(dbly, y);
+		add_dnodeint(dbly, y);
 	else
 		add_dnodeint_end(dbly, y);
 }
