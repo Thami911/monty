@@ -7,8 +7,8 @@
  */
 void _rotl(stack_t **dbly, unsigned int l_num)
 {
-	stack_t *auxa = NULL;
-	stack_t *auxb = NULL;
+	stack_t *abx = NULL;
+	stack_t *uxb = NULL;
 	(void)l_num;
 
 	if (*dbly == NULL)
@@ -17,17 +17,17 @@ void _rotl(stack_t **dbly, unsigned int l_num)
 	if ((*dbly)->next == NULL)
 		return;
 
-	auxa = (*dbly)->next;
-	auxb = *dbly;
+	abx = (*dbly)->next;
+	uxb = *dbly;
 
-	for (; auxb->next != NULL; auxb = auxb->next)
+	for (; uxb->next != NULL; uxb = uxb->next)
 		;
 
-	auxa->prev = NULL;
-	auxb->next = *dbly;
+	abx->prev = NULL;
+	uxb->next = *dbly;
 	(*dbly)->next = NULL;
-	(*dbly)->prev = auxb;
-	*dbly = auxa;
+	(*dbly)->prev = uxb;
+	*dbly = abx;
 }
 
 /**
