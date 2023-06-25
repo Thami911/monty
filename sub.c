@@ -7,7 +7,7 @@
   *Return: no return
  */
 
-void sub(stack_t **head, unsigned int count)
+void s_sub(stack_t **head, unsigned int count)
 {
 	stack_t *xyz;
 	int sus, nodes;
