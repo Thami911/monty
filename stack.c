@@ -7,7 +7,7 @@
  * Return: no return
 */
 
-void stack(stack_t **head, unsigned int count)
+void s_stack(stack_t **head, unsigned int count)
 {
 	(void)head;
 	(void)count;
