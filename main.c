@@ -32,16 +32,16 @@ int main(int argc, char *argv[])
 	while (read_line > 0)
 	{
 		content = NULL;
-		read_line = getline(&content, &size, file);
+		read_line = g_getline(&content, &size, file);
 		bus.content = content;
 		count++;
 		if (read_line > 0)
 		{
-			execute(content, &stack, count, file);
+			e_execute(content, &stack, count, file);
 		}
 		free(content);
 	}
-	free_stack(stack);
+	f_free_stack(stack);
 	fclose(file);
 return (0);
 }
