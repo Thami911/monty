@@ -20,7 +20,7 @@ void s_sub(stack_t **head, unsigned int count)
 		fprintf(stderr, "L%d: can't sub, stack too short\n", count);
 		fclose(bus.file);
 		free(bus.content);
-		free_stack(*head);
+		f_free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	xyz = *head;
