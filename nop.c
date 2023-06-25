@@ -7,7 +7,7 @@
   *Return: no return
  */
 
-void nop(stack_t **head, unsigned int count)
+void n_nop(stack_t **head, unsigned int count)
 {
 	(void) count;
 	(void) head;
