@@ -5,7 +5,7 @@
 * @head: head of the stack
 */
 
-void free_stack(stack_t *head)
+void f_free_stack(stack_t *head)
 {
 	stack_t *xyz;
 
