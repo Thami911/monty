@@ -7,7 +7,7 @@
  * Return: no return
 */
 
-void pint(stack_t **head, unsigned int count)
+void p_pint(stack_t **head, unsigned int count)
 {
 	if (*head == NULL)
 	{
