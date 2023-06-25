@@ -7,7 +7,7 @@
  * Return: no return
 */
 
-void swap(stack_t **head, unsigned int count)
+void s_swap(stack_t **head, unsigned int count)
 {
 	stack_t *h;
 	int len = 0, xyz;
