@@ -7,7 +7,7 @@
  * Return: no return
 */
 
-void push(stack_t **head, unsigned int count)
+void p_push(stack_t **head, unsigned int count)
 {
 	int n, j = 0, flag = 0;
 
