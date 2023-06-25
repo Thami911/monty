@@ -7,7 +7,7 @@
  * Return: no return
 */
 
-void queue(stack_t **head, unsigned int count)
+void q_queue(stack_t **head, unsigned int count)
 {
 	(void)head;
 	(void)count;
@@ -21,7 +21,7 @@ void queue(stack_t **head, unsigned int count)
  * Return: no return
 */
 
-void addqueue(stack_t **head, int n)
+void a_addqueue(stack_t **head, int n)
 {
 	stack_t *new_node, *xyz;
 
