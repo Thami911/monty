@@ -7,7 +7,7 @@
   *Return: no return
  */
 
-void rotl(stack_t **head,  __attribute__((unused)) unsigned int count)
+void r_rotl(stack_t **head,  __attribute__((unused)) unsigned int count)
 {
 	stack_t *tmp = *head, *xyz;
 
