@@ -8,7 +8,7 @@
  * Return: no return
 */
 
-void pstr(stack_t **head, unsigned int count)
+void p_pstr(stack_t **head, unsigned int count)
 {
 	stack_t *h;
 	(void)count;
