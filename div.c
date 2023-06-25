@@ -7,7 +7,7 @@
  * Return: no return
 */
 
-void div(stack_t **head, unsigned int count)
+void d_div(stack_t **head, unsigned int count)
 {
 	stack_t *h;
 	int len = 0, xyz;
